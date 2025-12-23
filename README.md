@@ -94,6 +94,13 @@
 - **代码位置**：`code/O2OCouponPredict.scala`
 - **结果文件**：`result/task3-ccf_offline_stage1_test_revised.csv`（ `Probability` 列）
 
-**结果展示**
+**部分结果展示**
 
 ![任务三（MLlib）预测结果](image/task3.png)
+
+## 实验感受与收获
+
+- **对 Spark 三种编程范式的理解更清晰**：通过 RDD、Spark SQL、MLlib 三部分任务，对Spark编程有了整体认识。
+- **数据清洗的重要性**：本次数据中 `null`较多，是否正确过滤与填充会直接影响统计与模型效果。
+- **特征工程是模型效果的关键**：任务三将折扣形式（满减/折扣）数值化、构造时间特征与类别编码，让模型能更好地学习用户用券行为模式。
+- **实践能力提升**：熟悉了 HDFS/本地路径读写、结果输出、以及使用 `Pipeline` 统一训练与预测流程。
